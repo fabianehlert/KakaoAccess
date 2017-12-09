@@ -16,6 +16,7 @@ class TableCell: UITableViewCell {
 		}
 	}
 	
+	@IBOutlet private weak var thumbnaiImageView: UIImageView?
 	@IBOutlet private weak var titleLabel: UILabel?
 	@IBOutlet private weak var rangeLabel: UILabel?
 	@IBOutlet private weak var seatsLabel: UILabel?
@@ -24,6 +25,7 @@ class TableCell: UITableViewCell {
 	// MARK: -
 	
 	override func prepareForReuse() {
+		self.thumbnaiImageView?.image = nil
 		self.titleLabel?.text = nil
 		self.rangeLabel?.text = nil
 		self.seatsLabel?.text = nil
@@ -32,6 +34,9 @@ class TableCell: UITableViewCell {
 	}
 	
 	private func updateViewModel(_ model: AircraftViewModel?) {
+		if let url = model?.imageURL {
+			self.thumbnaiImageView?.loadImage(from: url)
+		}
 		self.titleLabel?.text = model?.name
 		self.rangeLabel?.text = model?.range
 		self.seatsLabel?.text = model?.seats
