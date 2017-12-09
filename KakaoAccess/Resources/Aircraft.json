@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Airbus A319neo",
+        "range": 6950,
+        "seats": 140,
+        "mtow": 64
+    },
+    {
+        "name": "Airbus A320neo",
+        "range": 6500,
+        "seats": 165,
+        "mtow": 73.5
+    },
+    {
+        "name": "Airbus A321neo",
+        "range": 7400,
+        "seats": 206,
+        "mtow": 89
+    },
+    {
+        "name": "Airbus A330-800neo",
+        "range": 13900,
+        "seats": 257,
+        "mtow": 242
+    },
+    {
+        "name": "Airbus A350-900",
+        "range": 15000,
+        "seats": 325,
+        "mtow": 280
+    },
+    {
+        "name": "Airbus A380-800",
+        "range": 15000,
+        "seats": 555,
+        "mtow": 560
+    },
+    {
+        "name": "Boeing 737 MAX 10",
+        "range": 5960,
+        "seats": 230,
+        "mtow": 92
+    },
+    {
+        "name": "Boeing 747-8",
+        "range": 14816,
+        "seats": 410,
+        "mtow": 448
+    },
+    {
+        "name": "Boeing 777-9",
+        "range": 14075,
+        "seats": 425,
+        "mtow": 352
+    },
+    {
+        "name": "Boeing 787-10",
+        "range": 11910,
+        "seats": 330,
+        "mtow": 254
+    },
+    {
+        "name": "Bombardier CS100",
+        "range": 5741,
+        "seats": 135,
+        "mtow": 61
+    }
+]

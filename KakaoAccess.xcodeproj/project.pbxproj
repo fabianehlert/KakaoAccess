@@ -15,6 +15,8 @@
 		1F73A81B1FDBF48D00569254 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73A81A1FDBF48D00569254 /* TableViewController.swift */; };
 		1F73A81D1FDBF49500569254 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73A81C1FDBF49500569254 /* CollectionViewController.swift */; };
 		1F73A8201FDBF4A600569254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73A81F1FDBF4A600569254 /* ViewController.swift */; };
+		1F73A8221FDBF8F500569254 /* Aircraft.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F73A8211FDBF8F500569254 /* Aircraft.json */; };
+		1F73A8251FDBFDAA00569254 /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73A8241FDBFDAA00569254 /* Aircraft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1F73A81A1FDBF48D00569254 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1F73A81C1FDBF49500569254 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		1F73A81F1FDBF4A600569254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F73A8211FDBF8F500569254 /* Aircraft.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Aircraft.json; sourceTree = "<group>"; };
+		1F73A8241FDBFDAA00569254 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				1F73A8001FDBE81800569254 /* AppDelegate.swift */,
-				1F73A8131FDBF22D00569254 /* UI */,
+				1F73A8231FDBFD9400569254 /* Core */,
 				1F73A8121FDBF21F00569254 /* Components */,
 				1F73A8161FDBF26400569254 /* Resources */,
 			);
@@ -93,6 +97,7 @@
 				1F73A8071FDBE81800569254 /* Assets.xcassets */,
 				1F73A8091FDBE81800569254 /* LaunchScreen.storyboard */,
 				1F73A80C1FDBE81800569254 /* Info.plist */,
+				1F73A8211FDBF8F500569254 /* Aircraft.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -119,6 +124,15 @@
 				1F73A81F1FDBF4A600569254 /* ViewController.swift */,
 			);
 			path = "Page Control";
+			sourceTree = "<group>";
+		};
+		1F73A8231FDBFD9400569254 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1F73A8241FDBFDAA00569254 /* Aircraft.swift */,
+				1F73A8131FDBF22D00569254 /* UI */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F73A80B1FDBE81800569254 /* LaunchScreen.storyboard in Resources */,
+				1F73A8221FDBF8F500569254 /* Aircraft.json in Resources */,
 				1F73A8081FDBE81800569254 /* Assets.xcassets in Resources */,
 				1F73A8061FDBE81800569254 /* Main.storyboard in Resources */,
 			);
@@ -198,6 +213,7 @@
 				1F73A8151FDBF23800569254 /* KakaoPageControl.swift in Sources */,
 				1F73A81B1FDBF48D00569254 /* TableViewController.swift in Sources */,
 				1F73A8011FDBE81800569254 /* AppDelegate.swift in Sources */,
+				1F73A8251FDBFDAA00569254 /* Aircraft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
