@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F102AA11FDC02A00052A04C /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F102AA01FDC02A00052A04C /* TableCell.swift */; };
 		1F73A8011FDBE81800569254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73A8001FDBE81800569254 /* AppDelegate.swift */; };
 		1F73A8061FDBE81800569254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F73A8041FDBE81800569254 /* Main.storyboard */; };
 		1F73A8081FDBE81800569254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F73A8071FDBE81800569254 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F102AA01FDC02A00052A04C /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		1F73A7FD1FDBE81800569254 /* KakaoAccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoAccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F73A8001FDBE81800569254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F73A8051FDBE81800569254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1F73A81A1FDBF48D00569254 /* TableViewController.swift */,
+				1F102AA01FDC02A00052A04C /* TableCell.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				1F73A8201FDBF4A600569254 /* ViewController.swift in Sources */,
 				1F73A81D1FDBF49500569254 /* CollectionViewController.swift in Sources */,
 				1F73A8151FDBF23800569254 /* KakaoPageControl.swift in Sources */,
+				1F102AA11FDC02A00052A04C /* TableCell.swift in Sources */,
 				1F73A81B1FDBF48D00569254 /* TableViewController.swift in Sources */,
 				1F73A8011FDBE81800569254 /* AppDelegate.swift in Sources */,
 				1F73A8251FDBFDAA00569254 /* Aircraft.swift in Sources */,
