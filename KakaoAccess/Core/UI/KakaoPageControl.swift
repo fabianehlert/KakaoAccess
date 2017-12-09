@@ -43,6 +43,14 @@ class KakaoPageControl: UIView {
 			self.layer.addSublayer(indicator)
 			self.indicators.append(indicator)
 		}
+		
+		let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(decrement))
+		swipeLeft.direction = .left
+		self.addGestureRecognizer(swipeLeft)
+		
+		let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(increment))
+		swipeRight.direction = .right
+		self.addGestureRecognizer(swipeRight)
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
@@ -63,6 +71,18 @@ class KakaoPageControl: UIView {
 										  cornerRadius: self.frame.height / 2).cgPath
 			indicator.fillColor = i == self.currentPage ? Const.activeColor : Const.inactiveColor
 		}
+	}
+	
+	@objc
+	private func increment() {
+		let new = self.currentPage + 1
+		self.currentPage = new >= (self.numberOfPages-1) ? (self.numberOfPages-1) : new
+	}
+	
+	@objc
+	private func decrement() {
+		let new = self.currentPage - 1
+		self.currentPage = new < 0 ? 0 : new
 	}
 	
 }
