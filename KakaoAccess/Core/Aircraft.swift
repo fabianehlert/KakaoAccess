@@ -11,6 +11,7 @@ import Foundation
 struct Aircraft: Codable {
 	
 	let name: String
+	let imageURL: String
 	let range: Int
 	let seats: Int
 	let mtow: Double
@@ -41,6 +42,7 @@ struct Parser {
 struct AircraftViewModel {
 	
 	let name: String
+	let imageURL: String
 	let range: String
 	let seats: String
 	let mtow: String
@@ -48,7 +50,8 @@ struct AircraftViewModel {
 	init?(aircraft: Aircraft?) {
 		guard let aircraft = aircraft else { return nil }
 		self.name = aircraft.name
-		self.range = "\(aircraft.range) km"
+		self.imageURL = aircraft.imageURL
+		self.range = "\(aircraft.range) km range"
 		self.seats = "\(aircraft.seats) seats"
 		self.mtow = "\(aircraft.mtow) tons"
 	}

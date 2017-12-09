@@ -1,66 +1,77 @@
 [
     {
         "name": "Airbus A319neo",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 6950,
         "seats": 140,
         "mtow": 64
     },
     {
         "name": "Airbus A320neo",
-        "range": 6500,
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
+ 		"range": 6500,
         "seats": 165,
         "mtow": 73.5
     },
     {
         "name": "Airbus A321neo",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 7400,
         "seats": 206,
         "mtow": 89
     },
     {
         "name": "Airbus A330-800neo",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 13900,
         "seats": 257,
         "mtow": 242
     },
     {
         "name": "Airbus A350-900",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 15000,
         "seats": 325,
         "mtow": 280
     },
     {
         "name": "Airbus A380-800",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 15000,
         "seats": 555,
         "mtow": 560
     },
     {
         "name": "Boeing 737 MAX 10",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 5960,
         "seats": 230,
         "mtow": 92
     },
     {
         "name": "Boeing 747-8",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 14816,
         "seats": 410,
         "mtow": 448
     },
     {
         "name": "Boeing 777-9",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 14075,
         "seats": 425,
         "mtow": 352
     },
     {
         "name": "Boeing 787-10",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 11910,
         "seats": 330,
         "mtow": 254
     },
     {
         "name": "Bombardier CS100",
+ 		"imageURL": "http://www.aircraft.airbus.com/typo3temp/_processed_/csm_A319neo_CFM_AIB_VR_scale_835e648d07.png",
         "range": 5741,
         "seats": 135,
         "mtow": 61
