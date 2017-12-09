@@ -37,3 +37,20 @@ struct Parser {
 	}
 	
 }
+
+struct AircraftViewModel {
+	
+	let name: String
+	let range: String
+	let seats: String
+	let mtow: String
+	
+	init?(aircraft: Aircraft?) {
+		guard let aircraft = aircraft else { return nil }
+		self.name = aircraft.name
+		self.range = "\(aircraft.range) km"
+		self.seats = "\(aircraft.seats) seats"
+		self.mtow = "\(aircraft.mtow) tons"
+	}
+	
+}
