@@ -10,8 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 	
+	private var pageControl: KakaoPageControl = {
+		let control = KakaoPageControl(frame: .zero, numberOfPages: 4)
+		control.translatesAutoresizingMaskIntoConstraints = false
+		return control
+	}()
+	
+	// MARK: - ViewController lifecycle
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		self.view.addSubview(self.pageControl)
+		NSLayoutConstraint.activate([
+			self.pageControl.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor,
+													  constant: 20),
+			self.pageControl.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor,
+													   constant: -20),
+			self.pageControl.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor,
+													 constant: -20),
+			self.pageControl.heightAnchor.constraint(equalToConstant: 6)
+		])
+	}
+	
+	// MARK: - Actions
+	
+	@IBAction private func stepperClicked(stepper: UIStepper) {
+		self.pageControl.currentPage = Int(stepper.value)
 	}
 	
 }

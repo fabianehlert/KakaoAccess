@@ -135,14 +135,81 @@
                     <view key="view" contentMode="scaleToFill" id="EQk-2B-hAV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IM-S4-ZFs">
+                                <rect key="frame" x="16" y="112" width="343" height="76.5"/>
+                                <string key="text">Here’s to the crazy ones.
+The misfits.
+The rebels.
+The troublemakers.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think Different" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIF-06-LBp">
+                                <rect key="frame" x="16" y="84" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylp-TS-AtP">
+                                <rect key="frame" x="16" y="451" width="343" height="76.5"/>
+                                <string key="text">Because the people who are crazy enough to think
+they can change the world,
+Are the ones who do.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4F-5b-1aW">
+                                <rect key="frame" x="16" y="205" width="343" height="229.5"/>
+                                <string key="text">The round pegs in the square holes.
+The ones who see things differently.
+They’re not fond of rules.
+And they have no respect for the status quo.
+You can quote them, disagree with them, glorify or vilify them.
+But the only thing you can’t do is ignore them.
+Because they change things.
+They push the human race forward.
+And while some may see them as the crazy ones,
+We see genius.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v4F-5b-1aW" firstAttribute="leading" secondItem="XcP-J3-YCF" secondAttribute="leading" constant="16" id="5GD-gh-g9f"/>
+                            <constraint firstItem="XcP-J3-YCF" firstAttribute="trailing" secondItem="8IM-S4-ZFs" secondAttribute="trailing" constant="16" id="Ij0-mg-Wmy"/>
+                            <constraint firstAttribute="trailing" secondItem="ylp-TS-AtP" secondAttribute="trailing" constant="16" id="J0w-oX-ngq"/>
+                            <constraint firstItem="8IM-S4-ZFs" firstAttribute="leading" secondItem="XcP-J3-YCF" secondAttribute="leading" constant="16" id="ckm-RD-17D"/>
+                            <constraint firstItem="ylp-TS-AtP" firstAttribute="top" secondItem="v4F-5b-1aW" secondAttribute="bottom" constant="16" id="klU-wl-5VD"/>
+                            <constraint firstItem="v4F-5b-1aW" firstAttribute="top" secondItem="8IM-S4-ZFs" secondAttribute="bottom" constant="16" id="luf-3E-UQv"/>
+                            <constraint firstItem="qIF-06-LBp" firstAttribute="top" secondItem="XcP-J3-YCF" secondAttribute="top" constant="20" id="pRj-Xw-aKL"/>
+                            <constraint firstItem="XcP-J3-YCF" firstAttribute="trailing" secondItem="qIF-06-LBp" secondAttribute="trailing" constant="16" id="rKX-pF-Rlg"/>
+                            <constraint firstItem="qIF-06-LBp" firstAttribute="leading" secondItem="XcP-J3-YCF" secondAttribute="leading" constant="16" id="t0c-K4-iVr"/>
+                            <constraint firstItem="ylp-TS-AtP" firstAttribute="leading" secondItem="XcP-J3-YCF" secondAttribute="leading" constant="16" id="t6Y-RU-Khx"/>
+                            <constraint firstItem="8IM-S4-ZFs" firstAttribute="top" secondItem="qIF-06-LBp" secondAttribute="bottom" constant="4" id="vQ4-5M-Lhg"/>
+                            <constraint firstAttribute="trailing" secondItem="v4F-5b-1aW" secondAttribute="trailing" constant="16" id="yQg-Kp-W0o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XcP-J3-YCF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Controls" id="74m-M9-nuG"/>
+                    <navigationItem key="navigationItem" title="Controls" id="74m-M9-nuG">
+                        <barButtonItem key="rightBarButtonItem" id="kqq-mg-zlQ">
+                            <stepper key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="3" id="dc8-6w-yQk">
+                                <rect key="frame" x="265" y="7.5" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperClickedWithStepper:" destination="dV5-p8-GDj" eventType="valueChanged" id="Yuo-60-dKm"/>
+                                </connections>
+                            </stepper>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdd-2E-BkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369" y="999"/>
+            <point key="canvasLocation" x="1368.8" y="998.95052473763121"/>
         </scene>
         <!--Table-->
         <scene sceneID="kpk-Vi-alS">
