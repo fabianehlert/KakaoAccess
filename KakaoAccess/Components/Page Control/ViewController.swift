@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 													   constant: -20),
 			self.pageControl.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor,
 													 constant: -20),
-			self.pageControl.heightAnchor.constraint(equalToConstant: 6)
+			self.pageControl.heightAnchor.constraint(equalToConstant: 15)
 		])
 	}
 	
