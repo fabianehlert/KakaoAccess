@@ -186,6 +186,7 @@ We see genius.</string>
                             <constraint firstItem="8IM-S4-ZFs" firstAttribute="leading" secondItem="XcP-J3-YCF" secondAttribute="leading" constant="16" id="ckm-RD-17D"/>
                             <constraint firstItem="ylp-TS-AtP" firstAttribute="top" secondItem="v4F-5b-1aW" secondAttribute="bottom" constant="16" id="klU-wl-5VD"/>
                             <constraint firstItem="v4F-5b-1aW" firstAttribute="top" secondItem="8IM-S4-ZFs" secondAttribute="bottom" constant="16" id="luf-3E-UQv"/>
+                            <constraint firstItem="XcP-J3-YCF" firstAttribute="bottom" secondItem="ylp-TS-AtP" secondAttribute="bottom" constant="90.5" id="nl4-xR-5be"/>
                             <constraint firstItem="qIF-06-LBp" firstAttribute="top" secondItem="XcP-J3-YCF" secondAttribute="top" constant="20" id="pRj-Xw-aKL"/>
                             <constraint firstItem="XcP-J3-YCF" firstAttribute="trailing" secondItem="qIF-06-LBp" secondAttribute="trailing" constant="16" id="rKX-pF-Rlg"/>
                             <constraint firstItem="qIF-06-LBp" firstAttribute="leading" secondItem="XcP-J3-YCF" secondAttribute="leading" constant="16" id="t0c-K4-iVr"/>
@@ -196,20 +197,81 @@ We see genius.</string>
                         <viewLayoutGuide key="safeArea" id="XcP-J3-YCF"/>
                     </view>
                     <navigationItem key="navigationItem" title="Controls" id="74m-M9-nuG">
-                        <barButtonItem key="rightBarButtonItem" id="kqq-mg-zlQ">
+                        <barButtonItem key="leftBarButtonItem" id="kqq-mg-zlQ">
                             <stepper key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="3" id="dc8-6w-yQk">
-                                <rect key="frame" x="265" y="7.5" width="94" height="29"/>
+                                <rect key="frame" x="16" y="7.5" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="stepperClickedWithStepper:" destination="dV5-p8-GDj" eventType="valueChanged" id="Yuo-60-dKm"/>
                                 </connections>
                             </stepper>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="0pY-Qf-4he">
+                            <connections>
+                                <segue destination="YL2-aL-A3G" kind="show" id="NNi-Z7-lB5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdd-2E-BkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1368.8" y="998.95052473763121"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="nxl-hy-es9">
+            <objects>
+                <tableViewController id="YL2-aL-A3G" customClass="SettingsViewController" customModule="KakaoAccess" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6hz-nf-qwI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="wSs-bM-6lI" customClass="SettingsCell" customModule="KakaoAccess" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wSs-bM-6lI" id="Mij-ia-3wi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-nb-qRN">
+                                            <rect key="frame" x="312" y="9" width="49" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="31" id="JVx-FD-8wm"/>
+                                                <constraint firstAttribute="width" constant="47" id="UMO-dm-xus"/>
+                                            </constraints>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvP-AJ-xRQ">
+                                            <rect key="frame" x="16" y="11" width="288" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="MvP-AJ-xRQ" firstAttribute="top" secondItem="Mij-ia-3wi" secondAttribute="topMargin" id="Dv1-UR-hIh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="MvP-AJ-xRQ" secondAttribute="bottom" id="P4a-tZ-i7B"/>
+                                        <constraint firstItem="kkh-nb-qRN" firstAttribute="leading" secondItem="MvP-AJ-xRQ" secondAttribute="trailing" constant="8" id="QV5-rG-uMT"/>
+                                        <constraint firstItem="kkh-nb-qRN" firstAttribute="centerY" secondItem="Mij-ia-3wi" secondAttribute="centerY" id="lDy-5s-PyF"/>
+                                        <constraint firstItem="MvP-AJ-xRQ" firstAttribute="leading" secondItem="Mij-ia-3wi" secondAttribute="leadingMargin" id="q9p-Vx-AsM"/>
+                                        <constraint firstAttribute="trailing" secondItem="kkh-nb-qRN" secondAttribute="trailing" constant="16" id="yZ5-MS-Vcc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="MvP-AJ-xRQ" id="FNL-BY-Xsc"/>
+                                    <outlet property="settingSwitch" destination="kkh-nb-qRN" id="8Qd-mL-UaB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YL2-aL-A3G" id="W8f-iM-xu2"/>
+                            <outlet property="delegate" destination="YL2-aL-A3G" id="CkC-Bh-Mdw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="zBq-2N-uNd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NR6-cB-8Ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2088.8000000000002" y="998.95052473763121"/>
         </scene>
         <!--Table-->
         <scene sceneID="kpk-Vi-alS">

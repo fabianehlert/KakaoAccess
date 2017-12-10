@@ -20,6 +20,8 @@
 		1F73A8201FDBF4A600569254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73A81F1FDBF4A600569254 /* ViewController.swift */; };
 		1F73A8221FDBF8F500569254 /* Aircraft.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F73A8211FDBF8F500569254 /* Aircraft.json */; };
 		1F73A8251FDBFDAA00569254 /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73A8241FDBFDAA00569254 /* Aircraft.swift */; };
+		1FC189BD1FDD4DBD00BEAADD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC189BC1FDD4DBD00BEAADD /* SettingsViewController.swift */; };
+		1FC189BF1FDD4DC400BEAADD /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC189BE1FDD4DC400BEAADD /* SettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1F73A81F1FDBF4A600569254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F73A8211FDBF8F500569254 /* Aircraft.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Aircraft.json; sourceTree = "<group>"; };
 		1F73A8241FDBFDAA00569254 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
+		1FC189BC1FDD4DBD00BEAADD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1FC189BE1FDD4DC400BEAADD /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				1F73A8171FDBF3F500569254 /* Table */,
 				1F73A8181FDBF3FA00569254 /* Collection */,
 				1F73A8191FDBF40100569254 /* Page Control */,
+				1FC189BB1FDD4DAC00BEAADD /* Settings */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -150,6 +155,15 @@
 				1F102AA91FDC11DD0052A04C /* Extensions */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		1FC189BB1FDD4DAC00BEAADD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1FC189BC1FDD4DBD00BEAADD /* SettingsViewController.swift */,
+				1FC189BE1FDD4DC400BEAADD /* SettingsCell.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,12 +242,14 @@
 				1F73A8201FDBF4A600569254 /* ViewController.swift in Sources */,
 				1F102AA81FDC11DA0052A04C /* UIImageView.swift in Sources */,
 				1F73A81D1FDBF49500569254 /* CollectionViewController.swift in Sources */,
+				1FC189BD1FDD4DBD00BEAADD /* SettingsViewController.swift in Sources */,
 				1F73A8151FDBF23800569254 /* KakaoPageControl.swift in Sources */,
 				1F102AA61FDC0F520052A04C /* CollectionCell.swift in Sources */,
 				1F102AA11FDC02A00052A04C /* TableCell.swift in Sources */,
 				1F73A81B1FDBF48D00569254 /* TableViewController.swift in Sources */,
 				1F73A8011FDBE81800569254 /* AppDelegate.swift in Sources */,
 				1F73A8251FDBFDAA00569254 /* Aircraft.swift in Sources */,
+				1FC189BF1FDD4DC400BEAADD /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
