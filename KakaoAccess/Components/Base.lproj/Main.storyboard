@@ -198,7 +198,7 @@ We see genius.</string>
                                 </connections>
                             </stepper>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="0pY-Qf-4he">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="0pY-Qf-4he">
                             <connections>
                                 <segue destination="YL2-aL-A3G" kind="show" id="NNi-Z7-lB5"/>
                             </connections>
@@ -412,6 +412,7 @@ We see genius.</string>
     <resources>
         <image name="collection" width="30" height="30"/>
         <image name="play" width="30" height="30"/>
+        <image name="settings" width="30" height="30"/>
         <image name="table" width="30" height="30"/>
     </resources>
 </document>
