@@ -19,11 +19,7 @@ class SettingsCell: UITableViewCell {
 	}
 	
 	@IBOutlet private weak var nameLabel: UILabel?
-    @IBOutlet private weak var settingSwitch: UISwitch? {
-        didSet {
-            self.settingSwitch?.isAccessibilityElement = false
-        }
-    }
+    @IBOutlet private weak var settingSwitch: UISwitch?
     
     override var accessibilityHint: String? {
         get {
@@ -51,6 +47,17 @@ class SettingsCell: UITableViewCell {
         guard let s = self.settingSwitch else { return false }
         s.setOn(!s.isOn, animated: true)
         return true
+    }
+    
+    // MARK: - Init
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.commonInit()
+    }
+    
+    private func commonInit() {
+        self.settingSwitch?.isAccessibilityElement = false
     }
 	
 }
