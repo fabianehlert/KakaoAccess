@@ -204,6 +204,9 @@ We see genius.</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="settingsButton" destination="0pY-Qf-4he" id="Id4-qa-1Bh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdd-2E-BkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

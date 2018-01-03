@@ -16,6 +16,12 @@ class ViewController: UIViewController {
 		return control
 	}()
 	
+    @IBOutlet private weak var settingsButton: UIBarButtonItem? {
+        didSet {
+            self.settingsButton?.accessibilityLabel = "Settings"
+        }
+    }
+    
 	// MARK: - ViewController lifecycle
 	
 	override func viewDidLoad() {
