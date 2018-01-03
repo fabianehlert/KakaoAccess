@@ -15,8 +15,12 @@ class TableCell: UITableViewCell {
 			self.updateViewModel(self.viewModel)
 		}
 	}
-	
-	@IBOutlet private weak var thumbnaiImageView: UIImageView?
+    
+    @IBOutlet private weak var thumbnaiImageView: UIImageView? {
+        didSet {
+            self.thumbnaiImageView?.accessibilityIgnoresInvertColors = true
+        }
+    }
 	@IBOutlet private weak var titleLabel: UILabel?
 	@IBOutlet private weak var rangeLabel: UILabel?
 	@IBOutlet private weak var seatsLabel: UILabel?
