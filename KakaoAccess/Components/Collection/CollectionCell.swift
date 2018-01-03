@@ -21,11 +21,42 @@ class CollectionCell: UICollectionViewCell {
             self.thumbnaiImageView?.accessibilityIgnoresInvertColors = true
         }
     }
-	@IBOutlet private weak var titleLabel: UILabel?
-	@IBOutlet private weak var rangeLabel: UILabel?
-	@IBOutlet private weak var seatsLabel: UILabel?
-	@IBOutlet private weak var mtowLabel: UILabel?
+    @IBOutlet private weak var titleLabel: UILabel? {
+        didSet {
+            self.titleLabel?.isAccessibilityElement = false
+        }
+    }
+    @IBOutlet private weak var rangeLabel: UILabel? {
+        didSet {
+            self.rangeLabel?.isAccessibilityElement = false
+        }
+    }
+    @IBOutlet private weak var seatsLabel: UILabel? {
+        didSet {
+            self.seatsLabel?.isAccessibilityElement = false
+        }
+    }
+    @IBOutlet private weak var mtowLabel: UILabel? {
+        didSet {
+            self.mtowLabel?.isAccessibilityElement = false
+        }
+    }
 	
+    override var isAccessibilityElement: Bool {
+        get {
+            return true
+        }
+        set { }
+    }
+    
+    override var accessibilityLabel: String? {
+        get {
+            guard let vm = viewModel else { return nil }
+            return vm.name + ", " + vm.range + ", " + vm.seats + ", " + vm.mtow
+        }
+        set { }
+    }
+    
 	// MARK: -
 	
 	override func prepareForReuse() {
