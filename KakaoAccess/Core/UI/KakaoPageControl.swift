@@ -30,7 +30,36 @@ class KakaoPageControl: UIView {
 	private var numberOfPages: Int
 	
 	private var indicators = [CAShapeLayer]()
-	
+    
+    override var isAccessibilityElement: Bool {
+        get {
+            return true
+        }
+        set { }
+    }
+    
+    override var accessibilityTraits: UIAccessibilityTraits {
+        get {
+            return super.accessibilityTraits | UIAccessibilityTraitAdjustable
+        }
+        set { }
+    }
+    
+    override var accessibilityValue: String? {
+        get {
+            return "Page \(self.currentPage+1) of \(self.numberOfPages)"
+        }
+        set { }
+    }
+    
+    override func accessibilityIncrement() {
+        self.increment()
+    }
+    
+    override func accessibilityDecrement() {
+        self.decrement()
+    }
+    
 	// MARK: - Init
 	
 	init(frame: CGRect, numberOfPages: Int) {
