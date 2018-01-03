@@ -19,6 +19,38 @@ class SettingsCell: UITableViewCell {
 	}
 	
 	@IBOutlet private weak var nameLabel: UILabel?
-	@IBOutlet private weak var settingSwitch: UISwitch?
+    @IBOutlet private weak var settingSwitch: UISwitch? {
+        didSet {
+            self.settingSwitch?.isAccessibilityElement = false
+        }
+    }
+    
+    override var accessibilityHint: String? {
+        get {
+            return "Double click to toggle"
+        }
+        set { }
+    }
+    
+    override var isAccessibilityElement: Bool {
+        get {
+            return true
+        }
+        set { }
+    }
+    
+    override var accessibilityValue: String? {
+        get {
+            guard let s = self.settingSwitch else { return nil }
+            return s.isOn ? "On" : "Off"
+        }
+        set { }
+    }
+    
+    override func accessibilityActivate() -> Bool {
+        guard let s = self.settingSwitch else { return false }
+        s.setOn(!s.isOn, animated: true)
+        return true
+    }
 	
 }
