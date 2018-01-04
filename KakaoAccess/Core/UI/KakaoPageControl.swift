@@ -62,7 +62,7 @@ class KakaoPageControl: UIView {
     
 	// MARK: - Init
 	
-	init(frame: CGRect, numberOfPages: Int) {
+	init(frame: CGRect = .zero, numberOfPages: Int) {
 		self.numberOfPages = numberOfPages
 		
 		super.init(frame: frame)

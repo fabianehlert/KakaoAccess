@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 	
 	private var pageControl: KakaoPageControl = {
-		let control = KakaoPageControl(frame: .zero, numberOfPages: 4)
+		let control = KakaoPageControl(numberOfPages: 4)
 		control.translatesAutoresizingMaskIntoConstraints = false
 		return control
 	}()
